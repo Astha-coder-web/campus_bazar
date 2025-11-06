@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Bazar — Home</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <script>
+    // Add logout handler when page loads
+    window.addEventListener('load', function() {
+      document.getElementById('logout').addEventListener('click', function(e) {
+        e.preventDefault();
+        logout();
+      });
+    });
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark homebackground">
+    <div class="container">
+      <img src="https://media.istockphoto.com/id/1495088043/vector/user-profile-icon-avatar-or-person-icon-profile-picture-portrait-symbol-default-portrait.jpg?s=612x612&w=0&k=20&c=dhV2p1JwmloBTOaGAtaA3AW1KSnjsdMt7-U_3EZElZ0=" height="33px" width="40px" style="border-radius: 50%; margin-right:10px;">
+      <a class="navbar-brand fw-bold" href="index.html" id="details">Campus Bazar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#nav" aria-controls="nav" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="sell.html">Sell</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" id="logout">Logout</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero bg-light py-5">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold fontBold">Campus Bazar</h1>
+      <p class="lead">Buy, sell and exchange items easily — designed for students.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="shop.html" class="btn homebackground btn-lg">Start Shopping</a>
+        <a href="sell.html" class="btn btn-outline-primary btn-lg">Start Selling</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm  homebackground text-white">
+            <div class="card-body">
+              <h5 class="card-title">Campus-only</h5>
+              <p class="card-text">Items listed by students — safe and trusted.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm homebackground text-white">
+            <div class="card-body">
+              <h5 class="card-title">Save Money</h5>
+              <p class="card-text">Buy used books, gadgets and essentials at lower prices.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm homebackground text-white">
+            <div class="card-body">
+              <h5 class="card-title">Quick Listing</h5>
+              <p class="card-text">Post an item in seconds using the Sell page.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products (rendered by JS) -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h3 class="mb-4">Featured Items</h3>
+      <div id="featured-products" class="row g-3"></div>
+    </div>
+  </section>
+  <!-- Benefits Section (Adapted from Reference) -->
+    <section class="benefits py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center text-dark mb-4">Why Choose CampusBazar?</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="benefit-item p-3">
+                        <h5>Secure Shopping</h5>
+                        <p>Your data is protected with top-tier security.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="benefit-item p-3">
+                        <h5>Fast Delivery</h5>
+                        <p>Get your orders delivered quickly and reliably.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="benefit-item p-3">
+                        <h5>Quality Products</h5>
+                        <p>Handpicked items for the best experience.</p>
+                    </div>
+                </div>
+
+                 <div class="col-md-4 text-center">
+                    <div class="benefit-item p-3">
+                        <h5>Sell Smater</h5>
+                        <p>Give your old products a new life.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="benefit-item p-3">
+                        <h5>Handle easily</h5>
+                        <p>No complicated setup involved.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="benefit-item p-3">
+                        <h5>Contact System</h5>
+                        <p>Directly contact your seller and make best deal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (Adapted from Reference) -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <h2 class="text-center text-dark mb-4">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="homebackground testimonial p-3 bg-white shadow rounded">
+                      <div class="d-flex flex-row justify-content-center"><img src="review-girl.webp" height="200px" width="300px"class="image-review"></div>
+                        <p>"Amazing shopping experience! Fast and secure."</p>
+                        <p class="fw-bold">- Daniela A.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="homebackground p-3 bg-white shadow rounded">
+                      <div class="d-flex flex-row justify-content-center"><img src="boy-review.jpg" height="200px" width="300px"class="image-review"></div>
+                        <p>"Love the quality and delivery speed."</p>
+                        <p class="fw-bold">- Tom H.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="homebackground p-3 bg-white shadow rounded">
+                         <div class="d-flex flex-row justify-content-center"><img src="sandra-review.jpg" height="200px" width="300px"class="image-review"></div>
+                        <p>"Best e-commerce site I've used!"</p>
+                        <p class="fw-bold">- Sandra D.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  <!-- Footer -->
+  <footer class="homebackground text-white py-4">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+      <div>© Campus Bazar</div>
+      <div>
+        Contact: <a href="mailto:sietcodinclubhelp@gmail.com" class="text-white">CampusBazar22@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- View Details Modal -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" id="modal-content-js"></div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS + Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- App script -->
+  <script src="js/api.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    // Render featured products on home
+    document.addEventListener('DOMContentLoaded', function () {
+      renderFeatured('featured-products', 4);
+    });
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Show featured products (existing)
+    if (typeof renderFeatured === 'function') {
+      renderFeatured('featured-products', 4);
+    }
+
+    // ✅ Display logged-in user's name and email
+    const user = JSON.parse(localStorage.getItem('currentUser'));
+    if (user && user.name && user.email) {
+      const details = document.getElementById('details');
+      details.innerHTML = `${user.name} (${user.email})`;
+    }
+  });
+  document.getElementById('logout')?.addEventListener('click', () => {
+  localStorage.removeItem('currentUser');
+  window.location.href = 'index.html';
+});
+
+</script>
+<script src="js/api.js"></script>
+</body>
+</html>
